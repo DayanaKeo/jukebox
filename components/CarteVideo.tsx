@@ -3,6 +3,7 @@ import tw from '../lib/tw';
 import { Ionicons } from '@expo/vector-icons';
 import { useState } from 'react';
 import { ResizeMode, Video } from 'expo-av';
+import IconAccueil from './icons/IconAccueil';
 
 type Props = {
   videoUrl: string;
@@ -13,8 +14,10 @@ type Props = {
 
 const { height, width } = Dimensions.get('window');
 
+
 export default function VideoCard({ videoUrl, title, platform, thumbnail }: Props) {
     const [showVideo, setShowVideo] = useState(false);
+    console.log('AccueilIcon =', IconAccueil);
 
     return (
     <View style={[tw`relative`, { height, width }]}>
