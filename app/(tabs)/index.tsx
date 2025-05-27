@@ -1,7 +1,5 @@
-// import { View, Text } from 'react-native';
-// import tw from 'tailwind-react-native-classnames';
-import AccueilScreen from '../../pages/Accueil';
-
-
-export default AccueilScreen;
-
+import React from 'react';
+import { View, Text } from 'react-native';
+export default function HomeScreen() {
+  return <View><Text>Home</Text></View>;
+}

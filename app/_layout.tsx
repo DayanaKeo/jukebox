@@ -5,6 +5,8 @@ export default function RootLayout() {
   return (
     <Stack screenOptions={{ headerShown: false }}>
       <Stack.Screen name="(tabs)" />
+      <Stack.Screen name="+not-found" />   /* 404 page */
+
     </Stack>
   );
 }

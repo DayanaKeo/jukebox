@@ -1,6 +1,6 @@
 import { View, Text } from 'react-native';
 
-export default function Creer() {
+export default function ReceptionScreen() {
   return (
     <View>
       <Text>Réception</Text>

@@ -3,9 +3,14 @@ import { Modal, View, Text, TouchableOpacity, FlatList, Image } from 'react-nati
 import profils from '../../app/data/profils.json';
 import tw from '@/lib/tw';
 import { Profil } from '../ProfilCard';
+import { useRouter } from 'expo-router';
+
+
+const router = useRouter();
 
 export default function SwitchProfilModal({ visible, onClose, onSelect }: {
   visible: boolean;
+  
   onClose: () => void;
   onSelect: (profil: Profil) => void;
 }) {
@@ -19,7 +24,10 @@ export default function SwitchProfilModal({ visible, onClose, onSelect }: {
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => (
               <TouchableOpacity
-                onPress={() => onSelect(item)}
+                onPress={() => {
+                onClose();
+                router.push(`/profil/${item.id}`);
+                }}
                 style={tw`flex-row items-center mb-3`}
               >
                 <Image source={{ uri: item.photo }} style={tw`w-10 h-10 rounded-full mr-3`} />
