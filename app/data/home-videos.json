@@ -1,0 +1,17 @@
+[
+    {
+      "id": "1",
+      "title": "Golden retriever in the park",
+      "platform": "Local",
+      "thumbnail": "https://img.youtube.com/vi/Q5cPQg3oq-o/maxresdefault.jpg",
+      "videoUrl": "https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4"
+    },
+    {
+      "id": "2",
+      "title": "Street artist in Paris",
+      "platform": "Local",
+      "thumbnail": "https://img.youtube.com/vi/TVcLIfSC4OE/maxresdefault.jpg",
+      "videoUrl": "https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4"
+    }
+  ]
+  
