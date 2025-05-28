@@ -1,0 +1,32 @@
+[
+  {
+    "id": "notif-1",
+    "avatar": "https://randomuser.me/api/portraits/men/32.jpg",
+    "text": "Gaël Patra a liké votre publication",
+    "time": "10 minutes"
+  },
+  {
+    "id": "notif-2",
+    "avatar": "https://randomuser.me/api/portraits/women/45.jpg",
+    "text": "Lilybelle a commenté votre publication : « Superbe clip ! »",
+    "time": "1 jour"
+  },
+  {
+    "id": "notif-3",
+    "avatar": "https://randomuser.me/api/portraits/men/67.jpg",
+    "text": "Andy Ledjeuns a partagé votre publication",
+    "time": "5 jours"
+  },
+  {
+    "id": "notif-4",
+    "avatar": "https://randomuser.me/api/portraits/lego/1.jpg",
+    "text": "User1298 vous a suivi",
+    "time": "1 semaine"
+  },
+  {
+    "id": "notif-5",
+    "avatar": "https://randomuser.me/api/portraits/women/22.jpg",
+    "text": "Vous avez 3 nouveaux messages",
+    "time": "Voir la boîte de réception"
+  }
+]
