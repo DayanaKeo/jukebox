@@ -17,7 +17,12 @@ export default function ProfilPage() {
   return (
     <View style={tw`flex-1 bg-black`}>
       {/* Header dynamique */}
-      <HeaderPage title={profil.nom} iconName="person-circle" />
+        <HeaderPage
+            title={profil.nom}
+            rightIcon={
+                <Ionicons name="person-circle" size={24} color="white" />
+            }
+        />
 
       {/* Section profil */}
       <View style={tw`items-center mt-4`}>  
