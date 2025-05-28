@@ -2,7 +2,7 @@ import React from 'react';
 import { Modal, View, Text, TouchableOpacity, FlatList, Image } from 'react-native';
 import profils from '../../app/data/profils.json';
 import tw from '@/lib/tw';
-import { Profil } from '../ProfilCard';
+import ProfilCard, { Profil } from '../ProfilCard';
 import { useRouter } from 'expo-router';
 
 
@@ -23,18 +23,18 @@ export default function SwitchProfilModal({ visible, onClose, onSelect }: {
             data={profils.slice(0, 5)}
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => (
-              <TouchableOpacity
-                onPress={() => {
-                onClose();
-                router.push(`/profil/${item.id}`);
-                }}
-                style={tw`flex-row items-center mb-3`}
-              >
-                <Image source={{ uri: item.photo }} style={tw`w-10 h-10 rounded-full mr-3`} />
-                <Text style={tw`text-white font-semibold`}>{item.nom}</Text>
+              <TouchableOpacity onPress={() => onSelect(item)}>
+                <ProfilCard
+                  id={item.id}
+                  nom={item.nom}
+                  pseudo={item.pseudo}
+                  photo={item.photo}
+                  feed={item.feed}
+                />
               </TouchableOpacity>
             )}
           />
+
           <TouchableOpacity onPress={onClose} style={tw`mt-4`}>
             <Text style={tw`text-gray-400 text-center`}>Fermer</Text>
           </TouchableOpacity>
